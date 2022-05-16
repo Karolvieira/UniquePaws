@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="/submit.php" method="post">
+      <label for="primeiro nome">Primero Nome</label><br />
+      <input type="text" id="primeiro nome" required /><br /><br />
+
+      <label for="ultimo nome">Último Nome</label><br />
+      <input type="text" id="ultimo nome" required /><br /><br />
+
+      <label for="email">Email</label><br />
+      <input type="email" id="email" required /><br /><br />
+
+      <label for="morada">Morada</label><br />
+      <input type="text" id="morada" required /><br /><br />
+
+      <label for="codigo postal">Código Postal</label><br />
+      <input
+        type="number"
+        id="codigo postal"
+        required
+        maxlength="4"
+        placeholder="xxxx"
+      /><br /><br />
+
+      <label for="telemovel">Número de Telemóvel</label><br />
+      <input type="number" id="telemovel" required /><br /><br />
+
+      Género <br />
+      <label for="generoF">Feminino</label>
+      <input id="generoM" type="radio" value="feminino" required />
+      <label for="generoM">Masculino</label>
+      <input id="generoM" type="radio" value="masculino" required /><br /><br />
+
+      <label for="pais">País</label><br />
+      <input id="pais" required />
+      <select>
+        <option value="">Escolha o País</option>
+        <option value="">Portugal</option>
+        <option value="">China</option>
+        <option value="">Espanha</option></select
+      ><br /><br />
+
+      <label for="nascimento">Nascimento</label><br />
+      <input id="nascimento" type="date" required /><br /><br />
+
+      <label for="pw">Password</label><br />
+      <input id="pw" type="text" required minlength="8" /><br /><br />
+
+      <label for="politica">Li e aceito a politica de privacidade</label>
+      <input id="politica" type="checkbox" required /><br /><br />
+
+      <input type="submit" id="caixa" value="Enviar!" />
+    </form>
+  </body>
+</html>
